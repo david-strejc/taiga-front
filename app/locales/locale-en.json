@@ -35,6 +35,7 @@
         "LOGOUT": "Logout",
         "GENERIC_ERROR": "One of our Oompa Loompas says {{error}}.",
         "IOCAINE_TEXT": "Feeling a bit overwhelmed by a task? Make sure others know about it by clicking on Iocaine when editing a task. It's possible to become immune to this (fictional) deadly poison by consuming small amounts over time just as it's possible to get better at what you do by occasionally taking on extra challenges!",
+        "SEE_USER_PROFILE": "See {{username }} profile",
         "TAGS": {
             "PLACEHOLDER": "I'm it! Tag me...",
             "DELETE": "delete tag",
@@ -708,9 +709,9 @@
         "ACTION_DELETE": "Delete issue",
         "LIGHTBOX_TITLE_BLOKING_ISSUE": "Blocking issue",
         "FIELDS": {
-            "PRIORITY": "priority",
-            "SEVERITY": "severity",
-            "TYPE": "type"
+            "PRIORITY": "Priority",
+            "SEVERITY": "Severity",
+            "TYPE": "Type"
         },
         "CONFIRM_PROMOTE": {
             "TITLE": "Promote this issue to a new user story",
@@ -855,5 +856,29 @@
             "LAST_EDIT": "last <br />edit",
             "LAST_MODIFICATION": "last modification"
         }
+    },
+    "TIMELINE": {
+        "UPLOAD_ATTACHMENT": "{{username}} has uploaded a new attachment in {{obj_name}}",
+        "US_CREATED": "{{username}} has created a new US in {{project_name}} {{obj_name}}",
+        "ISSUE_CREATED": "{{username}} has created a new Issue in {{project_name}} {{obj_name}}",
+        "TASK_CREATED": "{{username}} has created a new Task in {{project_name}} {{obj_name}}",
+        "WIKI_CREATED": "{{username}} has created a new Wiki page in {{project_name}} {{obj_name}}",
+        "NEW_PROJECT": "{{username}} has a new project {{project_name}}",
+        "MILESTONE_UPDATED": "{{username}} has updated the milestone {{obj_name}}",
+        "US_UPDATED": "{{username}} has updated the field \"{{field_name}}\" of the US {{obj_name}}",
+        "ISSUE_UPDATED": "{{username}} has updated the field \"{{field_name}}\" of the Issue {{obj_name}}",
+        "TASK_UPDATED": "{{username}} has updated the field \"{{field_name}}\" of the Task {{obj_name}}",
+        "WIKI_UPDATED": "{{username}} has update the Wiki page {{obj_name}}",
+        "NEW_COMMENT_US": "{{username}} has commented in the US {{obj_name}}",
+        "NEW_COMMENT_ISSUE": "{{username}} has commented in the Issue {{obj_name}}",
+        "NEW_COMMENT_TASK": "{{username}} has commented in the Task {{obj_name}}",
+        "NEW_MEMBER": "{{project_name}} has a new member",
+        "US_ADDED_MILESTONE": "{{username}} has added the US {{obj_name}} to {{sprint_name}}",
+        "US_REMOVED_FROM_MILESTONE": "{{username}} has added the US {{obj_name}} to the Backlog",
+        "BLOCKED": "{{username}} has blocked {{obj_name}}",
+        "UNBLOCKED": "{{username}} has unblocked {{obj_name}}"
+    },
+    "LANGUAGES": {
+        "ENGLISH": "English"
     }
 }

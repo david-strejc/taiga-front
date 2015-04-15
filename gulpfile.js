@@ -114,7 +114,7 @@ paths.coffee_order = [
 
 paths.libs = [
     paths.vendor + "jquery/dist/jquery.js",
-    paths.vendor + "/lodash/dist/lodash.js",
+    paths.vendor + "lodash/dist/lodash.js",
     paths.vendor + "emoticons/lib/emoticons.js",
     paths.vendor + "underscore.string/lib/underscore.string.js",
     paths.vendor + "angular/angular.js",
@@ -137,6 +137,7 @@ paths.libs = [
     paths.vendor + "malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js",
     paths.vendor + "raven-js/dist/raven.js",
     paths.vendor + "l.js/l.js",
+    paths.vendor + "ngInfiniteScroll/build/ng-infinite-scroll.js",
     paths.app + "js/jquery.ui.git-custom.js",
     paths.app + "js/jquery-ui.drag-multiple-custom.js",
     paths.app + "js/jquery.ui.touch-punch.min.js",

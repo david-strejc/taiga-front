@@ -297,7 +297,8 @@ modules = [
     # Vendor modules
     "ngRoute",
     "ngAnimate",
-    "pascalprecht.translate"
+    "pascalprecht.translate",
+    "infinite-scroll"
 ].concat(_.map(@.taigaContribPlugins, (plugin) -> plugin.module))
 
 # Main module definition

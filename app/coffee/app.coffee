@@ -266,6 +266,7 @@ modules = [
     "taigaEvents",
 
     # Specific Modules
+    "taigaNavigationBar"
     "taigaRelatedTasks",
     "taigaBacklog",
     "taigaTaskboard",

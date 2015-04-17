@@ -60,24 +60,10 @@ class UserSettingsController extends mixOf(taiga.Controller, taiga.PageMixin)
 
         promise.then null, @.onInitialDataError.bind(@)
 
-    loadProject: ->
-        return @rs.projects.get(@scope.projectId).then (project) =>
-            @scope.project = project
-            @scope.$emit('project:loaded', project)
-            return project
-
-    loadLocales: ->
+    loadInitialData: ->
         return @rs.locales.list().then (locales) =>
             @scope.locales = locales
             return locales
-
-    loadInitialData: ->
-        promise = @repo.resolve({pslug: @params.pslug}).then (data) =>
-            @scope.projectId = data.project
-            return data
-
-        return @q.all([promise.then(=> @.loadProject()),
-                       @.loadLocales()])
 
     openDeleteLightbox: ->
         @rootscope.$broadcast("deletelightbox:new", @scope.user)

@@ -1,18 +1,13 @@
-DropDownProjectListDirective = () ->
-    link = (scope, elm, attrs, controller) ->
-      #TODO
-      console.log "ASDASDASD", controller
-
+DropdownProjectListDirective = () ->
     directive = {
-        link: link
         templateUrl: "navigation-bar/dropdown-project-list/dropdown-project-list.html"
         controller: "ProjectsController"
         scope: {}
         bindToController: true
-        controllerAs: "controller"
+        controllerAs: "vm"
     }
 
     return directive
 
-angular.module("taigaNavigationBar").directive("tgDropDownProjectList",
-    DropDownProjectListDirective)
+angular.module("taigaNavigationBar").directive("tgDropdownProjectList",
+    DropdownProjectListDirective)

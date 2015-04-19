@@ -102,6 +102,9 @@ urls = {
     "attachments/task": "/tasks/attachments"
     "attachments/wiki_page": "/wiki/attachments"
 
+    # Deployments
+    "deployments": "/deployments"
+
     # Custom Attributess
     "custom-attributes/userstory": "/userstory-custom-attributes"
     "custom-attributes/issue": "/issue-custom-attributes"
@@ -165,6 +168,7 @@ module.run([
     "$tgWikiResourcesProvider",
     "$tgSearchResourcesProvider",
     "$tgAttachmentsResourcesProvider",
+    "$tgDeploymentsResourcesProvider",
     "$tgMdRenderResourcesProvider",
     "$tgHistoryResourcesProvider",
     "$tgKanbanResourcesProvider",

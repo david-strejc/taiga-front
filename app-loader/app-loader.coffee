@@ -9,7 +9,7 @@ window.taigaConfig = {
     "privacyPolicyUrl": null,
     "termsOfServiceUrl": null,
     "maxUploadFileSize": null,
-    "contribPlugins": []
+    "contribPlugins": ["taigaContrib.hall"]
 }
 
 promise = $.getJSON "/js/conf.json"

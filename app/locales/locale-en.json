@@ -117,6 +117,22 @@
             "IS_DEPRECATED": "is deprecated"
         }
     },
+    "DEPLOYMENT": {
+        "SECTION_NAME": "deployments",
+        "TITLE": "<%- name %> uploaded on <%- created_date %>",
+        "DESCIPTION": "Type a deployment name",
+        "DEPRECATED_FILE": "Deprecated?",
+        "ADD": "Add a new deploment. <%- maxFileSizeMsg %>",
+        "MAX_FILE_SIZE": "[Max. size:  {{maxFileSize}}]",
+        "SHOW_DEPRECATED": "+ show deprecated atachments",
+        "HIDE_DEPRECATED": "- hide deprecated atachments",
+        "COUNT_DEPRECATED": "({{ctrl.deprecatedAttachmentsCount }} deprecated)",
+        "MAX_UPLOAD_SIZE": "Maximum upload size is {{maxFileSize}}",
+        "DATE": "DD MMM YYYY [at] hh:mm",
+        "FIELDS": {
+            "IS_DEPRECATED": "is deprecated"
+        }
+    },
     "PAGINATION": {
         "PREVIOUS": "Prev",
         "NEXT": "Next"

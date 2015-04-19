@@ -52,7 +52,10 @@ class AttachmentsController extends taiga.Controller
 
         urlname = "attachments/#{@.type}"
 
+        console.log urlname
+
         return @rs.attachments.list(urlname, @.objectId, @.projectId).then (attachments) =>
+            console.log urlname
             @.attachments = _.sortBy(attachments, "order")
             @.updateCounters()
             return attachments

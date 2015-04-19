@@ -1,0 +1,18 @@
+section.deployments
+    .deployments-header
+        h3.attachments-title
+            span.deployments-num(tg-bind-html="ctrl.deploymentsCount")
+            span.attachments-text(translate="DEPLOYMENT.SECTION_NAME")
+        .add-attach(tg-check-permission!="modify_<%- type %>", title!="{{'DEPLOYMENT.ADD' | translate}}")
+            label(for="add-attach", class="icon icon-plus related-tasks-buttons")
+            input(id="add-attach", type="file", multiple="multiple")
+
+    .deployment-body.sortable
+        .single-deployment(ng-repeat="attach in ctrl.attachments|filter:ctrl.filterAttachments track by attach.id" tg-attachment="attach", tg-bind-scope)
+
+        .single-deployment(ng-repeat="file in ctrl.uploadingDeployments")
+            .deployment-name
+                a(href="", tg-bo-title="file.name", tg-bo-bind="file.name")
+            .deployment-comments
+                span(ng-bind="file.progressMessage")
+                .percentage(ng-style="{'width': file.progressPercent}")
